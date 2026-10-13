@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chelsea Yu — Booking Inquiry</title>
+<meta name="description" content="Booking inquiries for Chelsea Yu — violinist, drummer, DJ. Handled by Patty Tiu Management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,600;0,900;1,400&family=Permanent+Marker&display=swap">
+<style>
+  :root{
+    --primary:#A81C07;
+    --shade:#9D0B28;
+    --hot:#FF0A55;
+    --support:#5A082D;
+    --ink:#000000;
+    --paper:#FFFFFF;
+    --display:"Permanent Marker","Bradley Hand",cursive;
+    --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --gut:clamp(18px,5vw,64px);
+    --max:860px;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:16px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gut)}
+  h1,h2,h3{margin:0;text-wrap:balance}
+  .eyebrow{
+    font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:0;
+  }
+
+  .ptm-bar{background:var(--ink);padding-block:calc(14px + env(safe-area-inset-top,0px)) 14px}
+  .ptm-lockup{display:block;width:clamp(200px,34vw,280px);height:auto}
+  /* ── masthead · ground primary / type white / accent black ── */
+  .mast{background:var(--primary);color:var(--paper);
+    padding-block:clamp(36px,7vw,64px) clamp(34px,6vw,58px);}
+  .mast .eyebrow{color:rgba(255,255,255,.74)}
+  .scrawl{
+    font-family:var(--display);
+    font-size:clamp(44px,13vw,104px);line-height:.94;margin:.14em 0 .06em;
+    color:transparent;-webkit-text-stroke:2px var(--paper);paint-order:stroke fill;
+  }
+  .markwrap{margin:28px 0 18px;line-height:0}
+  .mark{display:block;width:clamp(240px,62vw,480px);height:auto}
+  .mast h1{
+    font-size:clamp(20px,3.6vw,30px);font-weight:900;letter-spacing:-.025em;
+    text-transform:uppercase;line-height:1;
+  }
+  .position{
+    margin:20px 0 0;max-width:34ch;font-size:clamp(16px,2vw,19px);font-weight:600;
+    line-height:1.35;color:var(--paper);
+  }
+  .metastrip{
+    display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:26px;padding-top:18px;
+    border-top:1px solid rgba(255,255,255,.4);
+    font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:rgba(255,255,255,.84);
+  }
+
+  /* ── packages · ground black / type white ── */
+  .rates{background:var(--ink);color:var(--paper);padding-block:clamp(34px,6vw,58px)}
+  .rates .eyebrow{color:rgba(255,255,255,.6);margin-bottom:8px}
+  .rates h2{font-size:clamp(22px,4vw,34px);font-weight:900;letter-spacing:-.02em;
+    text-transform:uppercase;line-height:1;margin-bottom:6px}
+  .rates .note{font-size:14.5px;color:rgba(255,255,255,.72);max-width:62ch;margin:0 0 26px}
+  .lane{margin-bottom:26px}
+  .lane:last-child{margin-bottom:0}
+  .lane h3{
+    font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
+    color:rgba(255,255,255,.58);padding-bottom:10px;
+    border-bottom:1px solid rgba(255,255,255,.34);
+  }
+  .row{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
+    padding:13px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+  .row .k{flex:0 0 26px;font-size:12px;font-weight:900;letter-spacing:.1em;
+    color:rgba(255,255,255,.55)}
+  .row .t{flex:1 1 200px;font-size:15.5px;font-weight:600;line-height:1.3}
+  .row .t span{display:block;font-size:12.5px;font-weight:400;
+    color:rgba(255,255,255,.66);margin-top:2px}
+
+  /* ── form · ground white / type black / accent primary ── */
+  .form{padding-block:clamp(38px,6vw,64px)}
+  .form .eyebrow{color:var(--primary);margin-bottom:8px}
+  .form h2{font-size:clamp(22px,4vw,34px);font-weight:900;letter-spacing:-.02em;
+    text-transform:uppercase;line-height:1;margin-bottom:10px}
+  .form .lede{font-size:16.5px;max-width:62ch;margin:0 0 34px}
+  fieldset{border:0;margin:0 0 30px;padding:0}
+  legend{
+    font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--primary);padding:0 0 10px;width:100%;
+    border-bottom:1px solid rgba(0,0,0,.14);margin-bottom:20px;
+  }
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px 22px}
+  .fld{display:flex;flex-direction:column;gap:6px}
+  .fld.full{grid-column:1/-1}
+  label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .req{color:var(--hot);font-weight:900}
+  .hint{font-size:13px;font-weight:400;letter-spacing:0;text-transform:none;
+    color:rgba(0,0,0,.6);line-height:1.45}
+  input[type=text],input[type=email],input[type=tel],input[type=date],
+  input[type=time],input[type=number],select,textarea{
+    font-family:var(--sans);font-size:16px;font-weight:400;color:var(--ink);
+    background:var(--paper);border:1px solid rgba(0,0,0,.34);border-radius:0;
+    padding:11px 13px;width:100%;
+  }
+  textarea{min-height:104px;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible,
+  button:focus-visible,.opt input:focus-visible+span{
+    outline:2px solid var(--hot);outline-offset:2px
+  }
+  .opts{display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(0,0,0,.14)}
+  .opt{display:flex;gap:12px;align-items:flex-start;padding:13px 0;
+    border-bottom:1px solid rgba(0,0,0,.14);cursor:pointer}
+  .opt input{margin:4px 0 0;accent-color:var(--primary);flex:0 0 auto;width:17px;height:17px}
+  .opt .lab{font-size:15.5px;font-weight:600;line-height:1.3;text-transform:none;letter-spacing:0}
+  .opt .lab em{display:block;font-style:normal;font-size:12.5px;font-weight:400;
+    color:rgba(0,0,0,.62);margin-top:2px}
+  .opt .lab b{font-variant-numeric:tabular-nums;font-weight:600}
+  .laneline{font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
+    color:rgba(0,0,0,.5);margin:22px 0 0}
+
+  /* ── terms · ground support / type white ── */
+  .terms{background:var(--support);color:var(--paper);padding-block:clamp(32px,5vw,50px)}
+  .terms .eyebrow{color:rgba(255,255,255,.66);margin-bottom:14px}
+  .terms dl{margin:0;display:grid;gap:0}
+  .terms div{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.28)}
+  .terms div:first-child{border-top:1px solid rgba(255,255,255,.4)}
+  .terms dt{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.72)}
+  .terms dd{margin:4px 0 0;font-size:15px;max-width:66ch}
+
+  .submit{padding-block:clamp(34px,5vw,56px)}
+  button{
+    font-family:var(--sans);font-size:14px;font-weight:900;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--paper);background:var(--primary);
+    border:0;border-radius:0;padding:18px 40px;cursor:pointer;width:100%;
+    transition:background .15s ease;
+  }
+  button:hover{background:var(--hot)}
+  .after{font-size:14px;color:rgba(0,0,0,.66);margin:16px 0 0;max-width:62ch}
+  .hp{position:absolute;left:-9999px}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.66);
+    padding-block:30px calc(30px + env(safe-area-inset-bottom,0px));font-size:12.5px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between}
+  footer a{color:var(--paper);text-decoration:none}
+  footer a:hover{color:var(--hot)}
+  footer .mgmt{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="ptm-bar"><div class="wrap"><img class="ptm-lockup" src="/ptm-management-lockup.png" width="945" height="246" alt="Patty Tiu Management — Artist Development · Representation"></div></div>
+<header class="mast">
+  <div class="wrap">
+    <p class="eyebrow">Booking Inquiry</p>
+    <h2 class="markwrap"><img class="mark" src="/chelsea-yu-logo.png" width="1200" height="486" alt="Chelsea Yu"></h2>
+    <h1>Violinist · Drummer · DJ</h1>
+    <p class="position">Drums. Violin. Decks. One woman, one set, no backing act.</p>
+    <div class="metastrip">
+      <span>San Mig Light DJ Spin-Off 2024 Champion · Club Hype DJ Champion 2024</span>
+      <span>Trained in Singapore &amp; the USA</span>
+      <span>All bookings via management</span>
+    </div>
+  </div>
+</header>
+
+<section class="rates">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>What you can book</h2>
+    <p class="note">Pick from one group — the wedding packages already
+      contain everything they list, and the DJ tiers are built for rooms, launches and parties.</p>
+
+    <div class="lane">
+      <h3>Weddings &amp; ceremonies — violin &amp; piano</h3>
+      <div class="row"><span class="k">V1</span><span class="t">Ceremony<span>Processional, interlude, signing, recessional · 30–45 min on site</span></span></div>
+      <div class="row"><span class="k">V2</span><span class="t">Reception<span>Cocktail arrival, dinner service and programme underscore · 2 hours</span></span></div>
+      <div class="row"><span class="k">V3</span><span class="t">Full Wedding CY Experience<span>Ceremony, two-hour reception set and a two-hour DJ set for the afterparty · 4.5 hours</span></span></div>
+    </div>
+
+    <div class="lane">
+      <h3>Sets — DJ &amp; hybrid</h3>
+      <div class="row"><span class="k">T1</span><span class="t">Live DJ Set<span>Standard duration 1–2 hours</span></span></div>
+      <div class="row"><span class="k">T2</span><span class="t">Hybrid DJ Performance<span>DJ set with live drums or live violin · 1–2 hours</span></span></div>
+      <div class="row"><span class="k">T3</span><span class="t">The Full Chelsea Yu Experience<span>DJ set with live violin and live drums · 1–2 hours</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="form">
+  <div class="wrap">
+    <p class="eyebrow">Tell us about the day</p>
+    <h2>Booking inquiry</h2>
+    <p class="lede">Send this and it comes straight to management. We check the date, then come back
+      with a written quote, Chelsea's technical and hospitality requirements, and payment terms —
+      usually within one working day.</p>
+
+    <form name="chelsea-yu-inquiry" method="POST" data-netlify="true"
+          data-netlify-honeypot="bot-field" action="/thanks.html">
+      <p class="hp"><label>Leave this blank <input name="bot-field"></label></p>
+
+      <fieldset>
+        <legend>Who you are</legend>
+        <div class="grid">
+          <div class="fld">
+            <label for="contact_name">Your name <span class="req">*</span></label>
+            <input id="contact_name" name="Your name" type="text" required autocomplete="name">
+          </div>
+          <div class="fld">
+            <label for="role">Your role</label>
+            <input id="role" name="Your role" type="text"
+                   placeholder="Bride, planner, brand manager">
+          </div>
+          <div class="fld">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="Email" type="email" required autocomplete="email">
+            <span class="hint">Where the quote and contract will be sent.</span>
+          </div>
+          <div class="fld">
+            <label for="mobile">Mobile or WhatsApp <span class="req">*</span></label>
+            <input id="mobile" name="Mobile" type="tel" required autocomplete="tel">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>The booking</legend>
+        <div class="grid">
+          <div class="fld full">
+            <label for="client_name">Booking is for <span class="req">*</span></label>
+            <input id="client_name" name="Booking is for" type="text" required
+                   placeholder="Couple, company or host name">
+            <span class="hint">Exactly as it should read on the contract.</span>
+          </div>
+          <div class="fld">
+            <label for="entity">Company or registered entity</label>
+            <input id="entity" name="Company" type="text">
+            <span class="hint">Corporate bookings only.</span>
+          </div>
+          <div class="fld">
+            <label for="event_type">Event type <span class="req">*</span></label>
+            <select id="event_type" name="Event type" required>
+              <option value="">Choose one</option>
+              <option>Wedding — ceremony and reception</option>
+              <option>Corporate</option>
+              <option>Private / debut</option>
+              <option>Club</option>
+              <option>Festival</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="event_date">Event date <span class="req">*</span></label>
+            <input id="event_date" name="Event date" type="date" required>
+          </div>
+          <div class="fld">
+            <label for="guests">Guest count</label>
+            <input id="guests" name="Guest count" type="number" min="1" inputmode="numeric">
+          </div>
+          <div class="fld">
+            <label for="venue">Venue <span class="req">*</span></label>
+            <input id="venue" name="Venue" type="text" required>
+          </div>
+          <div class="fld">
+            <label for="city">City <span class="req">*</span></label>
+            <input id="city" name="City" type="text" required>
+          </div>
+          <div class="fld full">
+            <label for="coordinator">Coordinator or production contact</label>
+            <input id="coordinator" name="Coordinator" type="text">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>What you need</legend>
+        <p class="laneline" style="margin-top:0">Weddings &amp; ceremonies</p>
+        <div class="opts">
+          <label class="opt" for="p_v1"><input id="p_v1" type="checkbox" name="Package" value="V1 — Ceremony · PHP 25,000"><span class="lab">V1 — Ceremony<em>Violin &amp; piano, 30–45 min</em></span></label>
+          <label class="opt" for="p_v2"><input id="p_v2" type="checkbox" name="Package" value="V2 — Reception · PHP 50,000"><span class="lab">V2 — Reception<em>Violin &amp; piano, 2 hours</em></span></label>
+          <label class="opt" for="p_v3"><input id="p_v3" type="checkbox" name="Package" value="V3 — Full Wedding CY Experience · PHP 100,000"><span class="lab">V3 — Full Wedding CY Experience<em>Ceremony, reception and DJ afterparty</em></span></label>
+        </div>
+        <p class="laneline">Sets — DJ &amp; hybrid</p>
+        <div class="opts">
+          <label class="opt" for="p_t1"><input id="p_t1" type="checkbox" name="Package" value="T1 — Live DJ Set · PHP 30,000"><span class="lab">T1 — Live DJ Set<em>1–2 hours</em></span></label>
+          <label class="opt" for="p_t2"><input id="p_t2" type="checkbox" name="Package" value="T2 — Hybrid DJ Performance · PHP 55,000"><span class="lab">T2 — Hybrid DJ Performance<em>With live drums or live violin</em></span></label>
+          <label class="opt" for="p_t3"><input id="p_t3" type="checkbox" name="Package" value="T3 — The Full Chelsea Yu Experience · PHP 75,000"><span class="lab">T3 — The Full Chelsea Yu Experience<em>DJ with live violin and drums</em></span></label>
+        </div>
+
+        <div class="grid" style="margin-top:24px">
+          <div class="fld">
+            <label for="set_start">Set start time</label>
+            <input id="set_start" name="Set start" type="time">
+          </div>
+          <div class="fld">
+            <label for="set_end">Set end time</label>
+            <input id="set_end" name="Set end" type="time">
+            <span class="hint">An unstated set window is an unlimited window — we fix it in writing before signing.</span>
+          </div>
+          <div class="fld full">
+            <label for="extras">Anything beyond the package</label>
+            <input id="extras" name="Beyond the package" type="text"
+                   placeholder="Extra hours, an MC, an additional musician, a second custom arrangement">
+            <span class="hint">Quoted per event. A DJ is not a host — MC work is a separately quoted line, never assumed.</span>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Conditions on site</legend>
+        <div class="grid">
+          <div class="fld">
+            <label for="outdoor">Is the performance position outdoors or unprotected? <span class="req">*</span></label>
+            <select id="outdoor" name="Outdoor position" required>
+              <option value="">Choose one</option>
+              <option>No — indoor or fully covered</option>
+              <option>Yes — outdoor or partly exposed</option>
+              <option>Not yet decided</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="destination">Flights, a boat transfer or an overnight stay? <span class="req">*</span></label>
+            <select id="destination" name="Destination booking" required>
+              <option value="">Choose one</option>
+              <option>No — within Metro Manila</option>
+              <option>Yes — outside Metro Manila</option>
+              <option>Not sure yet</option>
+            </select>
+            <span class="hint">Travel, accommodation and meals outside Metro Manila are quoted per event.</span>
+          </div>
+          <div class="fld full">
+            <label for="notes">Anything else we should know</label>
+            <textarea id="notes" name="Notes"
+              placeholder="Programme, first-dance song, house sound, other acts on the bill, venue rules"></textarea>
+          </div>
+          <div class="fld full">
+            <label for="source">How did you hear about Chelsea?</label>
+            <input id="source" name="Source" type="text">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="submit" style="padding-block:0">
+        <button type="submit">Send inquiry</button>
+        <p class="after">Sending this does not hold your date. We will confirm availability in writing.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="terms">
+  <div class="wrap">
+    <p class="eyebrow">How a booking is confirmed</p>
+    <dl>
+      <div>
+        <dt>The quote</dt>
+        <dd>Written, referenced, and valid for 14 days. It carries the full fee schedule plus the technical and hospitality requirements.</dd>
+      </div>
+      <div>
+        <dt>The date</dt>
+        <dd>Held only when the reservation downpayment clears — 50% of talent fees, non-refundable, due on signing. A signature on its own holds nothing. Bookings confirmed inside 30 days of the event are payable in full at signing.</dd>
+      </div>
+      <div>
+        <dt>The balance</dt>
+        <dd>Due no later than 3 days before the event date.</dd>
+      </div>
+      <div>
+        <dt>If plans change</dt>
+        <dd>One reschedule inside 12 months, with the downpayment transferring to the new date and a re-quote in peak season.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="mgmt">All bookings via management</span>
+    <span><a href="mailto:igotyou@pattytiu.com">igotyou@pattytiu.com</a></span>
+    <span><a href="https://instagram.com/chelseayu.music">@chelseayu.music</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
