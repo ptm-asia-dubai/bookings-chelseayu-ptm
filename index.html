@@ -3,391 +3,418 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Chelsea Yu — Booking Inquiry</title>
-<meta name="description" content="Booking inquiries for Chelsea Yu — violinist, drummer, DJ. Handled by Patty Tiu Management.">
+<title>Chelsea Yu | DJ-Drummer-Violinist — Bookings</title>
+<meta name="description" content="More than a DJ, she delivers a full-stage experience; fusing music, live drumming, violin, and movement into a captivating performance that seamlessly blends elegance and energy.">
+<meta name="theme-color" content="#A81C07">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://bookings-chelseayu-ptm.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chelsea Yu | DJ-Drummer-Violinist — Bookings">
+<meta property="og:description" content="More than a DJ, she delivers a full-stage experience; fusing music, live drumming, violin, and movement into a captivating performance that seamlessly blends elegance and energy.">
+<meta property="og:url" content="https://bookings-chelseayu-ptm.netlify.app/">
+<meta property="og:image" content="https://bookings-chelseayu-ptm.netlify.app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/img/icon-512.png">
+<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,600;0,900;1,400&family=Permanent+Marker&display=swap">
-<style>
-  :root{
-    --primary:#A81C07;
-    --shade:#9D0B28;
-    --hot:#FF0A55;
-    --support:#5A082D;
-    --ink:#000000;
-    --paper:#FFFFFF;
-    --display:"Permanent Marker","Bradley Hand",cursive;
-    --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
-    --gut:clamp(18px,5vw,64px);
-    --max:860px;
-    color-scheme:light;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{
-    background:var(--paper);color:var(--ink);
-    font-family:var(--sans);font-size:16px;line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gut)}
-  h1,h2,h3{margin:0;text-wrap:balance}
-  .eyebrow{
-    font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:0;
-  }
-
-  .ptm-bar{background:var(--ink);padding-block:calc(14px + env(safe-area-inset-top,0px)) 14px}
-  .ptm-lockup{display:block;width:clamp(200px,34vw,280px);height:auto}
-  /* ── masthead · ground primary / type white / accent black ── */
-  .mast{background:var(--primary);color:var(--paper);
-    padding-block:clamp(36px,7vw,64px) clamp(34px,6vw,58px);}
-  .mast .eyebrow{color:rgba(255,255,255,.74)}
-  .scrawl{
-    font-family:var(--display);
-    font-size:clamp(44px,13vw,104px);line-height:.94;margin:.14em 0 .06em;
-    color:transparent;-webkit-text-stroke:2px var(--paper);paint-order:stroke fill;
-  }
-  .markwrap{margin:28px 0 18px;line-height:0}
-  .mark{display:block;width:clamp(240px,62vw,480px);height:auto}
-  .mast h1{
-    font-size:clamp(20px,3.6vw,30px);font-weight:900;letter-spacing:-.025em;
-    text-transform:uppercase;line-height:1;
-  }
-  .position{
-    margin:20px 0 0;max-width:34ch;font-size:clamp(16px,2vw,19px);font-weight:600;
-    line-height:1.35;color:var(--paper);
-  }
-  .metastrip{
-    display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:26px;padding-top:18px;
-    border-top:1px solid rgba(255,255,255,.4);
-    font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
-    color:rgba(255,255,255,.84);
-  }
-
-  /* ── packages · ground black / type white ── */
-  .rates{background:var(--ink);color:var(--paper);padding-block:clamp(34px,6vw,58px)}
-  .rates .eyebrow{color:rgba(255,255,255,.6);margin-bottom:8px}
-  .rates h2{font-size:clamp(22px,4vw,34px);font-weight:900;letter-spacing:-.02em;
-    text-transform:uppercase;line-height:1;margin-bottom:6px}
-  .rates .note{font-size:14.5px;color:rgba(255,255,255,.72);max-width:62ch;margin:0 0 26px}
-  .lane{margin-bottom:26px}
-  .lane:last-child{margin-bottom:0}
-  .lane h3{
-    font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
-    color:rgba(255,255,255,.58);padding-bottom:10px;
-    border-bottom:1px solid rgba(255,255,255,.34);
-  }
-  .row{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
-    padding:13px 0;border-bottom:1px solid rgba(255,255,255,.16)}
-  .row .k{flex:0 0 26px;font-size:12px;font-weight:900;letter-spacing:.1em;
-    color:rgba(255,255,255,.55)}
-  .row .t{flex:1 1 200px;font-size:15.5px;font-weight:600;line-height:1.3}
-  .row .t span{display:block;font-size:12.5px;font-weight:400;
-    color:rgba(255,255,255,.66);margin-top:2px}
-
-  /* ── form · ground white / type black / accent primary ── */
-  .form{padding-block:clamp(38px,6vw,64px)}
-  .form .eyebrow{color:var(--primary);margin-bottom:8px}
-  .form h2{font-size:clamp(22px,4vw,34px);font-weight:900;letter-spacing:-.02em;
-    text-transform:uppercase;line-height:1;margin-bottom:10px}
-  .form .lede{font-size:16.5px;max-width:62ch;margin:0 0 34px}
-  fieldset{border:0;margin:0 0 30px;padding:0}
-  legend{
-    font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
-    color:var(--primary);padding:0 0 10px;width:100%;
-    border-bottom:1px solid rgba(0,0,0,.14);margin-bottom:20px;
-  }
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:18px 22px}
-  .fld{display:flex;flex-direction:column;gap:6px}
-  .fld.full{grid-column:1/-1}
-  label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
-  .req{color:var(--hot);font-weight:900}
-  .hint{font-size:13px;font-weight:400;letter-spacing:0;text-transform:none;
-    color:rgba(0,0,0,.6);line-height:1.45}
-  input[type=text],input[type=email],input[type=tel],input[type=date],
-  input[type=time],input[type=number],select,textarea{
-    font-family:var(--sans);font-size:16px;font-weight:400;color:var(--ink);
-    background:var(--paper);border:1px solid rgba(0,0,0,.34);border-radius:0;
-    padding:11px 13px;width:100%;
-  }
-  textarea{min-height:104px;resize:vertical}
-  input:focus-visible,select:focus-visible,textarea:focus-visible,
-  button:focus-visible,.opt input:focus-visible+span{
-    outline:2px solid var(--hot);outline-offset:2px
-  }
-  .opts{display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(0,0,0,.14)}
-  .opt{display:flex;gap:12px;align-items:flex-start;padding:13px 0;
-    border-bottom:1px solid rgba(0,0,0,.14);cursor:pointer}
-  .opt input{margin:4px 0 0;accent-color:var(--primary);flex:0 0 auto;width:17px;height:17px}
-  .opt .lab{font-size:15.5px;font-weight:600;line-height:1.3;text-transform:none;letter-spacing:0}
-  .opt .lab em{display:block;font-style:normal;font-size:12.5px;font-weight:400;
-    color:rgba(0,0,0,.62);margin-top:2px}
-  .opt .lab b{font-variant-numeric:tabular-nums;font-weight:600}
-  .laneline{font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
-    color:rgba(0,0,0,.5);margin:22px 0 0}
-
-  /* ── terms · ground support / type white ── */
-  .terms{background:var(--support);color:var(--paper);padding-block:clamp(32px,5vw,50px)}
-  .terms .eyebrow{color:rgba(255,255,255,.66);margin-bottom:14px}
-  .terms dl{margin:0;display:grid;gap:0}
-  .terms div{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.28)}
-  .terms div:first-child{border-top:1px solid rgba(255,255,255,.4)}
-  .terms dt{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;
-    color:rgba(255,255,255,.72)}
-  .terms dd{margin:4px 0 0;font-size:15px;max-width:66ch}
-
-  .submit{padding-block:clamp(34px,5vw,56px)}
-  button{
-    font-family:var(--sans);font-size:14px;font-weight:900;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--paper);background:var(--primary);
-    border:0;border-radius:0;padding:18px 40px;cursor:pointer;width:100%;
-    transition:background .15s ease;
-  }
-  button:hover{background:var(--hot)}
-  .after{font-size:14px;color:rgba(0,0,0,.66);margin:16px 0 0;max-width:62ch}
-  .hp{position:absolute;left:-9999px}
-
-  footer{background:var(--ink);color:rgba(255,255,255,.66);
-    padding-block:30px calc(30px + env(safe-area-inset-bottom,0px));font-size:12.5px}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between}
-  footer a{color:var(--paper);text-decoration:none}
-  footer a:hover{color:var(--hot)}
-  footer .mgmt{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+<link rel="preload" as="image" href="/assets/img/hero-800.webp" imagesrcset="/assets/img/hero-480.webp 480w, /assets/img/hero-800.webp 800w, /assets/img/hero-1200.webp 1200w, /assets/img/hero-1334.webp 1334w" imagesizes="(min-width: 900px) 62vw, 100vw" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/assets/site.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Chelsea Yu",
+  "description": "DJ, drummer and violinist. More than a DJ, she delivers a full-stage experience; fusing music, live drumming, violin, and movement into a captivating performance that seamlessly blends elegance and energy.",
+  "url": "https://bookings-chelseayu-ptm.netlify.app/",
+  "image": "https://bookings-chelseayu-ptm.netlify.app/assets/img/og.jpg",
+  "email": "mica-ptm@pattytiu.com",
+  "sameAs": [
+    "https://instagram.com/chelseayu.music",
+    "https://facebook.com/chelseayu.music"
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#book">Skip to booking form</a>
 
-<div class="ptm-bar"><div class="wrap"><img class="ptm-lockup" src="/ptm-management-lockup.png" width="945" height="246" alt="Patty Tiu Management — Artist Development · Representation"></div></div>
-<header class="mast">
+<header class="nav on-red">
   <div class="wrap">
-    <p class="eyebrow">Booking Inquiry</p>
-    <h2 class="markwrap"><img class="mark" src="/chelsea-yu-logo.png" width="1200" height="486" alt="Chelsea Yu"></h2>
-    <h1>Violinist · Drummer · DJ</h1>
-    <p class="position">Drums. Violin. Decks. One woman, one set, no backing act.</p>
-    <div class="metastrip">
-      <span>San Mig Light DJ Spin-Off 2024 Champion · Club Hype DJ Champion 2024</span>
-      <span>Trained in Singapore &amp; the USA</span>
-      <span>All bookings via management</span>
-    </div>
+    <a class="nav__logo" href="#top" aria-label="Chelsea Yu, back to top">
+      <img src="/assets/img/logo-420.webp" width="420" height="173" alt="">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#book">Book</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<section class="rates">
-  <div class="wrap">
-    <p class="eyebrow">Services</p>
-    <h2>What you can book</h2>
-    <p class="note">Pick from one group — the wedding packages already
-      contain everything they list, and the DJ tiers are built for rooms, launches and parties.</p>
+<main id="top">
 
-    <div class="lane">
-      <h3>Weddings &amp; ceremonies — violin &amp; piano</h3>
-      <div class="row"><span class="k">V1</span><span class="t">Ceremony<span>Processional, interlude, signing, recessional · 30–45 min on site</span></span></div>
-      <div class="row"><span class="k">V2</span><span class="t">Reception<span>Cocktail arrival, dinner service and programme underscore · 2 hours</span></span></div>
-      <div class="row"><span class="k">V3</span><span class="t">Full Wedding CY Experience<span>Ceremony, two-hour reception set and a two-hour DJ set for the afterparty · 4.5 hours</span></span></div>
+  <!-- 1 · Hero -->
+  <section class="hero on-red" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <img src="/assets/img/hero-800.webp"
+           srcset="/assets/img/hero-480.webp 480w, /assets/img/hero-800.webp 800w, /assets/img/hero-1200.webp 1200w, /assets/img/hero-1334.webp 1334w"
+           sizes="(min-width: 900px) 62vw, 100vw" width="1334" height="2000" fetchpriority="high"
+           alt="Chelsea Yu in burgundy leather, holding red drumsticks against a warm red-to-amber studio backdrop">
     </div>
-
-    <div class="lane">
-      <h3>Sets — DJ &amp; hybrid</h3>
-      <div class="row"><span class="k">T1</span><span class="t">Live DJ Set<span>Standard duration 1–2 hours</span></span></div>
-      <div class="row"><span class="k">T2</span><span class="t">Hybrid DJ Performance<span>DJ set with live drums or live violin · 1–2 hours</span></span></div>
-      <div class="row"><span class="k">T3</span><span class="t">The Full Chelsea Yu Experience<span>DJ set with live violin and live drums · 1–2 hours</span></span></div>
+    <div class="echo" aria-hidden="true"><span>Chelsea<br>Yu</span><span>Chelsea<br>Yu</span><span>Chelsea<br>Yu</span><span>Chelsea<br>Yu</span></div>
+    <div class="wrap hero__body">
+      <img class="hero__logo" src="/assets/img/logo-840.webp" srcset="/assets/img/logo-420.webp 420w, /assets/img/logo-840.webp 840w"
+           sizes="(min-width: 1100px) 440px, 40vw" width="840" height="346" alt="Chelsea Yu">
+      <h1 id="hero-title">Chelsea Yu | <span class="nw">DJ-Drummer-Violinist</span></h1>
+      <p class="hero__line">All three, live, in one set.</p>
+      <a class="btn btn--light" href="#book">Book Chelsea</a>
     </div>
-  </div>
-</section>
+    <p class="hero__built"><span>Built by:</span> <img src="/assets/img/pt-dev-mark-white.svg" width="807" height="810" alt="PT Dev"></p>
+  </section>
 
-<section class="form">
+  <!-- 2 · More than just music -->
+  <section class="mtjm" aria-labelledby="mtjm-title">
+    <div class="wrap">
+      <div class="mtjm__grid reveal">
+        <h2 id="mtjm-title" class="marker mtjm__type mtjm__type--solid"><span>More than</span> <span>just music</span></h2>
+        <img class="mtjm__photo" loading="lazy" decoding="async"
+             src="/assets/img/stage-800.webp"
+             srcset="/assets/img/stage-480.webp 480w, /assets/img/stage-800.webp 800w, /assets/img/stage-1200.webp 1200w"
+             sizes="(min-width: 900px) 40vw, 78vw" width="1200" height="1799"
+             alt="Chelsea Yu posing under a spotlight in a burgundy leather top and tartan skirt">
+        <p class="marker mtjm__type mtjm__type--line" aria-hidden="true"><span>More than</span> <span>just music</span></p>
+      </div>
+      <ul class="trio">
+        <li class="reveal"><h3>DJ</h3><p>Genre-bending sets read off the room and mixed live, from first song to last call.</p></li>
+        <li class="reveal"><h3>Drums</h3><p>Live percussion layered over the mix, so every drop lands harder.</p></li>
+        <li class="reveal"><h3>Violin</h3><p>Electric violin that carries a ceremony and leads the line over the beat.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 · About -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap about__grid">
+      <div class="about__copy reveal">
+        <p class="kicker">About</p>
+        <h2 id="about-title" class="h2">Elegance <em>and</em> energy</h2>
+        <p>More than a DJ, she delivers a full-stage experience; fusing music, live drumming, violin, and movement into a captivating performance that seamlessly blends elegance and energy. Trained in Singapore and the USA, Chelsea Yu is known for crafting genre-bending sets tailored to every crowd and occasion.</p>
+        <p>A 2-time National DJ Competition Champion, she brings world-class intensity to the decks, no matter the event. Whether creating a refined ambiance or igniting a high-energy dance floor, Chelsea ensures every moment sounds and feels exceptional.</p>
+      </div>
+      <img class="about__photo reveal" loading="lazy" decoding="async"
+           src="/assets/img/violin-800.webp"
+           srcset="/assets/img/violin-480.webp 480w, /assets/img/violin-800.webp 800w, /assets/img/violin-1200.webp 1200w"
+           sizes="(min-width: 900px) 38vw, 90vw" width="1200" height="1799"
+           alt="Close portrait of Chelsea Yu holding her red electric violin upright beside her face">
+    </div>
+  </section>
+
+  <!-- 4 · Credentials -->
+  <section class="creds" aria-labelledby="creds-title">
+    <div class="wrap">
+      <h2 id="creds-title" class="kicker">Titles</h2>
+      <ul class="titles">
+        <li class="reveal"><span class="cap" data-text="San Mig Light DJ Spin-Off Grand Champion 2024">San Mig Light DJ Spin-Off Grand Champion 2024</span></li>
+        <li class="reveal"><span class="cap" data-text="Club Hype DJ Champion 2024">Club Hype DJ Champion 2024</span></li>
+        <li class="reveal"><span class="cap" data-text="Semi-Finalist, Table Rockerz Turntablism Competition Season 1">Semi-Finalist, Table Rockerz Turntablism Competition Season 1</span></li>
+      </ul>
+      <div class="creds__cols">
+        <div class="reveal">
+          <h3>Training</h3>
+          <ul>
+            <li>Graduate of Professional DJ School, Ministry of DJs Singapore</li>
+            <li>Former Violinist, Stivers School for the Arts Philharmonic Symphony Orchestra, Dayton, Ohio</li>
+            <li>Studied Recording and Mixing, Stivers School for the Arts</li>
+            <li>Drum Teacher, Alba International Music Academy, Austin, Texas</li>
+            <li>Trained in audio mixing by Mark Yulo</li>
+            <li>Owner/Founder, U Music Studio</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3>Releases</h3>
+          <ul class="releases">
+            <li>Sasha <span>2020</span></li>
+            <li>My Bad <span>2020</span></li>
+            <li>ITMIBT <span>2020</span></li>
+            <li>Love <span>2021</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Notable events -->
+  <section class="events" aria-labelledby="events-title">
+    <div class="wrap">
+      <h2 id="events-title" class="h2 reveal">Notable events</h2>
+      <ul class="events__list reveal">
+        <li>IQOS ILUMA i Launch, Okada Manila 2025</li>
+        <li>Suzuki Motorcycle Experience 2025 and 2026</li>
+        <li>Pioneer DJ / AlphaTheta CDJ-3000X Launch 2025</li>
+        <li>The Macallan 360</li>
+        <li>Uma Nota 2025</li>
+        <li>San Miguel Beer Oktoberfest, Okada Manila 2025</li>
+        <li>San Miguel Beer Oktoberfest, SMC Head Office 2025</li>
+        <li>BINI Concert / Magayon Festival 2025</li>
+        <li>UST-L Paskuhan 2025</li>
+        <li>Primus Hotel New Year Countdown 2025</li>
+        <li>One San Miguel Christmas Party, SMC Head Office 2024</li>
+        <li>Sunnies Appreciation Party 2022</li>
+      </ul>
+      <div class="venues reveal">
+        <h3 class="kicker">Venues played</h3>
+        <ul>
+          <li>The Palace BGC</li>
+          <li>Hao, Forbes Town BGC</li>
+          <li>Okada Manila</li>
+          <li>Hippers Bar and Resto (Cainta, Marikina)</li>
+          <li>Blackbox Katipunan</li>
+          <li>Radius Katipunan</li>
+          <li>Club Hype QC</li>
+          <li>URBN QC</li>
+          <li>URBN Makati</li>
+          <li>Soy and Sesame España</li>
+          <li>Study Hall España</li>
+          <li>XCLV Club Davao</li>
+          <li>Bae Bistro Davao</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Packages -->
+  <section class="packages on-red" id="packages" aria-labelledby="packages-title">
+    <div class="echo echo--hot" aria-hidden="true"><span>Chelsea<br>Yu</span><span>Chelsea<br>Yu</span><span>Chelsea<br>Yu</span><span>Chelsea<br>Yu</span></div>
+    <div class="wrap">
+      <h2 id="packages-title" class="marker reveal">Packages</h2>
+      <div class="pk-cols">
+        <div class="pk-col reveal">
+          <h3>Weddings</h3>
+          <ul>
+            <li class="card"><h4>V1 Ceremony — Violin &amp; Piano</h4><p>30–45 min</p>
+              <a class="btn" href="#book" data-pick="p_v1">Request this<span class="sr">: V1 Ceremony — Violin &amp; Piano</span></a></li>
+            <li class="card"><h4>V2 Reception — Violin &amp; Piano</h4><p>2 hrs</p>
+              <a class="btn" href="#book" data-pick="p_v2">Request this<span class="sr">: V2 Reception — Violin &amp; Piano</span></a></li>
+            <li class="card"><h4>V3 Full Wedding CY Experience</h4><p>Ceremony 30 min + reception 2 hrs + afterparty DJ 2 hrs</p>
+              <a class="btn" href="#book" data-pick="p_v3">Request this<span class="sr">: V3 Full Wedding CY Experience</span></a></li>
+          </ul>
+        </div>
+        <div class="pk-col reveal">
+          <h3>DJ &amp; Hybrid</h3>
+          <ul>
+            <li class="card"><h4>T1 · Tier 1 — Live DJ Set</h4><p>1–2 hrs</p>
+              <a class="btn" href="#book" data-pick="p_t1">Request this<span class="sr">: T1 · Tier 1 — Live DJ Set</span></a></li>
+            <li class="card"><h4>T2 · Tier 2 — Hybrid DJ Performance (DJ with drums or violin)</h4><p>1–2 hrs</p>
+              <a class="btn" href="#book" data-pick="p_t2">Request this<span class="sr">: T2 · Tier 2 — Hybrid DJ Performance</span></a></li>
+            <li class="card"><h4>T3 · Tier 3 — The Full Chelsea Yu Experience (DJ + violin + drums)</h4><p>1–2 hrs</p>
+              <a class="btn" href="#book" data-pick="p_t3">Request this<span class="sr">: T3 · Tier 3 — The Full Chelsea Yu Experience</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="packages__note reveal">Extra hours, MC work, additional musicians and travel outside Metro Manila are quoted per event.</p>
+    </div>
+  </section>
+
+  <!-- 7 · Book -->
+  <section class="book on-red" id="book" aria-labelledby="book-title">
+    <div class="book__cy" aria-hidden="true">CY</div>
+    <div class="wrap">
+      <div class="book__head">
+        <h2 id="book-title">Book Chelsea</h2>
+        <p class="lead">Tell us about your date. Every inquiry gets a personal reply.</p>
+      </div>
+
+      <div class="panel">
+        <form class="form" id="inquiry" name="chelsea-yu-inquiry" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="chelsea-yu-inquiry">
+          <p class="hp" aria-hidden="true"><label>Leave this blank <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <p class="req-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr">with an asterisk</span> are required.</p>
+
+          <fieldset class="group">
+            <legend>About you</legend>
+            <div class="grid">
+              <div class="field">
+                <label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="Your name" type="text" required autocomplete="name" aria-describedby="f-name-err">
+                <p class="err" id="f-name-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-role">Your role</label>
+                <input id="f-role" name="Your role" type="text" placeholder="Bride, groom, planner, brand manager…" aria-describedby="f-role-err">
+                <p class="err" id="f-role-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="Email" type="email" required autocomplete="email" aria-describedby="f-email-err">
+                <p class="err" id="f-email-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-mobile">Mobile <span class="req" aria-hidden="true">*</span></label>
+                <p class="hint" id="f-mobile-hint">09XX XXX XXXX or +63, WhatsApp preferred</p>
+                <input id="f-mobile" name="Mobile" type="tel" required autocomplete="tel" inputmode="tel" aria-describedby="f-mobile-hint f-mobile-err">
+                <p class="err" id="f-mobile-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-for">Booking is for <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-for" name="Booking is for" type="text" required placeholder="Couple's names, company or event name" aria-describedby="f-for-err">
+                <p class="err" id="f-for-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-company">Company</label>
+                <input id="f-company" name="Company" type="text" autocomplete="organization" aria-describedby="f-company-err">
+                <p class="err" id="f-company-err"></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="group">
+            <legend>The event</legend>
+            <div class="grid">
+              <div class="field">
+                <label for="f-type">Event type <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-type" name="Event type" required aria-describedby="f-type-err">
+                  <option value="">Choose one</option>
+                  <option>Wedding — ceremony only</option>
+                  <option>Wedding — reception only</option>
+                  <option>Wedding — ceremony and reception</option>
+                  <option>Corporate / brand event</option>
+                  <option>Club or bar night</option>
+                  <option>Festival or concert</option>
+                  <option>Private party / debut / birthday</option>
+                  <option>Other</option>
+                </select>
+                <p class="err" id="f-type-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-date">Event date <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-date" name="Event date" type="date" required aria-describedby="f-date-err">
+                <p class="err" id="f-date-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-guests">Guest count</label>
+                <input id="f-guests" name="Guest count" type="number" min="1" step="1" inputmode="numeric" aria-describedby="f-guests-err">
+                <p class="err" id="f-guests-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-venue">Venue <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-venue" name="Venue" type="text" required aria-describedby="f-venue-err">
+                <p class="err" id="f-venue-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-city">City <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-city" name="City" type="text" required autocomplete="address-level2" aria-describedby="f-city-err">
+                <p class="err" id="f-city-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-coord">Event coordinator / planner (if any)</label>
+                <input id="f-coord" name="Coordinator" type="text" aria-describedby="f-coord-err">
+                <p class="err" id="f-coord-err"></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="group">
+            <legend>The performance</legend>
+            <div class="grid">
+              <fieldset class="pkg full" id="pkg" aria-describedby="pkg-err">
+                <legend>Package <span class="req" aria-hidden="true">*</span><span class="sr">(required, choose at least one)</span></legend>
+                <div class="pkg-group" data-kind="V">
+                  <h4>Weddings</h4>
+                  <div class="opts">
+                    <label class="opt" for="p_v1"><input id="p_v1" type="checkbox" name="Package" value="V1 Ceremony — Violin &amp; Piano"><span><b>V1 Ceremony — Violin &amp; Piano</b><small>30–45 min</small></span></label>
+                    <label class="opt" for="p_v2"><input id="p_v2" type="checkbox" name="Package" value="V2 Reception — Violin &amp; Piano"><span><b>V2 Reception — Violin &amp; Piano</b><small>2 hrs</small></span></label>
+                    <label class="opt" for="p_v3"><input id="p_v3" type="checkbox" name="Package" value="V3 Full Wedding CY Experience"><span><b>V3 Full Wedding CY Experience</b><small>Ceremony 30 min + reception 2 hrs + afterparty DJ 2 hrs</small></span></label>
+                  </div>
+                </div>
+                <div class="pkg-group" data-kind="T">
+                  <h4>DJ &amp; Hybrid</h4>
+                  <div class="opts">
+                    <label class="opt" for="p_t1"><input id="p_t1" type="checkbox" name="Package" value="T1 · Tier 1 — Live DJ Set"><span><b>T1 · Tier 1 — Live DJ Set</b><small>1–2 hrs</small></span></label>
+                    <label class="opt" for="p_t2"><input id="p_t2" type="checkbox" name="Package" value="T2 · Tier 2 — Hybrid DJ Performance (DJ with drums or violin)"><span><b>T2 · Tier 2 — Hybrid DJ Performance (DJ with drums or violin)</b><small>1–2 hrs</small></span></label>
+                    <label class="opt" for="p_t3"><input id="p_t3" type="checkbox" name="Package" value="T3 · Tier 3 — The Full Chelsea Yu Experience (DJ + violin + drums)"><span><b>T3 · Tier 3 — The Full Chelsea Yu Experience (DJ + violin + drums)</b><small>1–2 hrs</small></span></label>
+                  </div>
+                </div>
+                <p class="err" id="pkg-err"></p>
+              </fieldset>
+
+              <div class="field">
+                <label for="f-start">Performance start</label>
+                <input id="f-start" name="Set start" type="time" aria-describedby="f-start-err">
+                <p class="err" id="f-start-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-end">Performance end</label>
+                <input id="f-end" name="Set end" type="time" aria-describedby="f-end-err">
+                <p class="err" id="f-end-err"></p>
+              </div>
+              <div class="field full">
+                <label for="f-beyond">Anything beyond the package? Leave blank if not.</label>
+                <input id="f-beyond" name="Beyond the package" type="text" aria-describedby="f-beyond-err">
+                <p class="err" id="f-beyond-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-outdoor">Outdoor position <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-outdoor" name="Outdoor position" required aria-describedby="f-outdoor-err">
+                  <option value="">Choose one</option>
+                  <option>No — indoor or fully covered</option>
+                  <option>Yes — outdoor or partly exposed</option>
+                  <option>Not yet decided</option>
+                </select>
+                <p class="err" id="f-outdoor-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-dest">Destination booking <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-dest" name="Destination booking" required aria-describedby="f-dest-err">
+                  <option value="">Choose one</option>
+                  <option>No — within Metro Manila</option>
+                  <option>Yes — outside Metro Manila</option>
+                  <option>Not sure yet</option>
+                </select>
+                <p class="err" id="f-dest-err"></p>
+              </div>
+              <div class="field full">
+                <label for="f-notes">Notes</label>
+                <textarea id="f-notes" name="Notes" rows="5" placeholder="Programme, music direction, anything we should know. For Tier 2, say drums or violin." aria-describedby="f-notes-err"></textarea>
+                <p class="err" id="f-notes-err"></p>
+              </div>
+              <div class="field full">
+                <label for="f-source">How did you hear about Chelsea?</label>
+                <input id="f-source" name="Source" type="text" aria-describedby="f-source-err">
+                <p class="err" id="f-source-err"></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="submit">
+            <p class="summary" id="form-summary" role="status" aria-live="assertive"></p>
+            <button class="btn" type="submit">Send inquiry</button>
+            <p class="fineprint">Your date is held only when the reservation downpayment clears.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-red">
   <div class="wrap">
-    <p class="eyebrow">Tell us about the day</p>
-    <h2>Booking inquiry</h2>
-    <p class="lede">Send this and it comes straight to management. We check the date, then come back
-      with a written quote, Chelsea's technical and hospitality requirements, and payment terms —
-      usually within one working day.</p>
-
-    <form name="chelsea-yu-inquiry" method="POST" data-netlify="true"
-          data-netlify-honeypot="bot-field" action="/thanks.html">
-      <p class="hp"><label>Leave this blank <input name="bot-field"></label></p>
-
-      <fieldset>
-        <legend>Who you are</legend>
-        <div class="grid">
-          <div class="fld">
-            <label for="contact_name">Your name <span class="req">*</span></label>
-            <input id="contact_name" name="Your name" type="text" required autocomplete="name">
-          </div>
-          <div class="fld">
-            <label for="role">Your role</label>
-            <input id="role" name="Your role" type="text"
-                   placeholder="Bride, planner, brand manager">
-          </div>
-          <div class="fld">
-            <label for="email">Email <span class="req">*</span></label>
-            <input id="email" name="Email" type="email" required autocomplete="email">
-            <span class="hint">Where the quote and contract will be sent.</span>
-          </div>
-          <div class="fld">
-            <label for="mobile">Mobile or WhatsApp <span class="req">*</span></label>
-            <input id="mobile" name="Mobile" type="tel" required autocomplete="tel">
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>The booking</legend>
-        <div class="grid">
-          <div class="fld full">
-            <label for="client_name">Booking is for <span class="req">*</span></label>
-            <input id="client_name" name="Booking is for" type="text" required
-                   placeholder="Couple, company or host name">
-            <span class="hint">Exactly as it should read on the contract.</span>
-          </div>
-          <div class="fld">
-            <label for="entity">Company or registered entity</label>
-            <input id="entity" name="Company" type="text">
-            <span class="hint">Corporate bookings only.</span>
-          </div>
-          <div class="fld">
-            <label for="event_type">Event type <span class="req">*</span></label>
-            <select id="event_type" name="Event type" required>
-              <option value="">Choose one</option>
-              <option>Wedding — ceremony and reception</option>
-              <option>Corporate</option>
-              <option>Private / debut</option>
-              <option>Club</option>
-              <option>Festival</option>
-            </select>
-          </div>
-          <div class="fld">
-            <label for="event_date">Event date <span class="req">*</span></label>
-            <input id="event_date" name="Event date" type="date" required>
-          </div>
-          <div class="fld">
-            <label for="guests">Guest count</label>
-            <input id="guests" name="Guest count" type="number" min="1" inputmode="numeric">
-          </div>
-          <div class="fld">
-            <label for="venue">Venue <span class="req">*</span></label>
-            <input id="venue" name="Venue" type="text" required>
-          </div>
-          <div class="fld">
-            <label for="city">City <span class="req">*</span></label>
-            <input id="city" name="City" type="text" required>
-          </div>
-          <div class="fld full">
-            <label for="coordinator">Coordinator or production contact</label>
-            <input id="coordinator" name="Coordinator" type="text">
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>What you need</legend>
-        <p class="laneline" style="margin-top:0">Weddings &amp; ceremonies</p>
-        <div class="opts">
-          <label class="opt" for="p_v1"><input id="p_v1" type="checkbox" name="Package" value="V1 — Ceremony · PHP 25,000"><span class="lab">V1 — Ceremony<em>Violin &amp; piano, 30–45 min</em></span></label>
-          <label class="opt" for="p_v2"><input id="p_v2" type="checkbox" name="Package" value="V2 — Reception · PHP 50,000"><span class="lab">V2 — Reception<em>Violin &amp; piano, 2 hours</em></span></label>
-          <label class="opt" for="p_v3"><input id="p_v3" type="checkbox" name="Package" value="V3 — Full Wedding CY Experience · PHP 100,000"><span class="lab">V3 — Full Wedding CY Experience<em>Ceremony, reception and DJ afterparty</em></span></label>
-        </div>
-        <p class="laneline">Sets — DJ &amp; hybrid</p>
-        <div class="opts">
-          <label class="opt" for="p_t1"><input id="p_t1" type="checkbox" name="Package" value="T1 — Live DJ Set · PHP 30,000"><span class="lab">T1 — Live DJ Set<em>1–2 hours</em></span></label>
-          <label class="opt" for="p_t2"><input id="p_t2" type="checkbox" name="Package" value="T2 — Hybrid DJ Performance · PHP 55,000"><span class="lab">T2 — Hybrid DJ Performance<em>With live drums or live violin</em></span></label>
-          <label class="opt" for="p_t3"><input id="p_t3" type="checkbox" name="Package" value="T3 — The Full Chelsea Yu Experience · PHP 75,000"><span class="lab">T3 — The Full Chelsea Yu Experience<em>DJ with live violin and drums</em></span></label>
-        </div>
-
-        <div class="grid" style="margin-top:24px">
-          <div class="fld">
-            <label for="set_start">Set start time</label>
-            <input id="set_start" name="Set start" type="time">
-          </div>
-          <div class="fld">
-            <label for="set_end">Set end time</label>
-            <input id="set_end" name="Set end" type="time">
-            <span class="hint">An unstated set window is an unlimited window — we fix it in writing before signing.</span>
-          </div>
-          <div class="fld full">
-            <label for="extras">Anything beyond the package</label>
-            <input id="extras" name="Beyond the package" type="text"
-                   placeholder="Extra hours, an MC, an additional musician, a second custom arrangement">
-            <span class="hint">Quoted per event. A DJ is not a host — MC work is a separately quoted line, never assumed.</span>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Conditions on site</legend>
-        <div class="grid">
-          <div class="fld">
-            <label for="outdoor">Is the performance position outdoors or unprotected? <span class="req">*</span></label>
-            <select id="outdoor" name="Outdoor position" required>
-              <option value="">Choose one</option>
-              <option>No — indoor or fully covered</option>
-              <option>Yes — outdoor or partly exposed</option>
-              <option>Not yet decided</option>
-            </select>
-          </div>
-          <div class="fld">
-            <label for="destination">Flights, a boat transfer or an overnight stay? <span class="req">*</span></label>
-            <select id="destination" name="Destination booking" required>
-              <option value="">Choose one</option>
-              <option>No — within Metro Manila</option>
-              <option>Yes — outside Metro Manila</option>
-              <option>Not sure yet</option>
-            </select>
-            <span class="hint">Travel, accommodation and meals outside Metro Manila are quoted per event.</span>
-          </div>
-          <div class="fld full">
-            <label for="notes">Anything else we should know</label>
-            <textarea id="notes" name="Notes"
-              placeholder="Programme, first-dance song, house sound, other acts on the bill, venue rules"></textarea>
-          </div>
-          <div class="fld full">
-            <label for="source">How did you hear about Chelsea?</label>
-            <input id="source" name="Source" type="text">
-          </div>
-        </div>
-      </fieldset>
-
-      <div class="submit" style="padding-block:0">
-        <button type="submit">Send inquiry</button>
-        <p class="after">Sending this does not hold your date. We will confirm availability in writing.</p>
-      </div>
-    </form>
-  </div>
-</section>
-
-<section class="terms">
-  <div class="wrap">
-    <p class="eyebrow">How a booking is confirmed</p>
-    <dl>
-      <div>
-        <dt>The quote</dt>
-        <dd>Written, referenced, and valid for 14 days. It carries the full fee schedule plus the technical and hospitality requirements.</dd>
-      </div>
-      <div>
-        <dt>The date</dt>
-        <dd>Held only when the reservation downpayment clears — 50% of talent fees, non-refundable, due on signing. A signature on its own holds nothing. Bookings confirmed inside 30 days of the event are payable in full at signing.</dd>
-      </div>
-      <div>
-        <dt>The balance</dt>
-        <dd>Due no later than 3 days before the event date.</dd>
-      </div>
-      <div>
-        <dt>If plans change</dt>
-        <dd>One reschedule inside 12 months, with the downpayment transferring to the new date and a re-quote in peak season.</dd>
-      </div>
-    </dl>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span class="mgmt">All bookings via management</span>
-    <span><a href="mailto:igotyou@pattytiu.com">igotyou@pattytiu.com</a></span>
-    <span><a href="https://instagram.com/chelseayu.music">@chelseayu.music</a></span>
+    <p class="built"><span>Built by:</span> <img src="/assets/img/pt-dev-mark.svg" width="807" height="810" alt="PT Dev" loading="lazy"></p>
+    <ul>
+      <li><a href="https://instagram.com/chelseayu.music" rel="noopener">Instagram @chelseayu.music</a></li>
+      <li><a href="https://facebook.com/chelseayu.music" rel="noopener">Facebook: Chelsea Yu</a></li>
+      <li><a href="https://bit.ly/chelseayu-presskit" rel="noopener">Press kit</a></li>
+      <li>Bookings: <a href="mailto:mica-ptm@pattytiu.com">mica-ptm@pattytiu.com</a></li>
+    </ul>
   </div>
 </footer>
-
 </body>
 </html>
