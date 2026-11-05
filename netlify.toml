@@ -1,9 +1,20 @@
 [build]
   publish = "."
 
+# Old thank-you URL from the previous form action
+[[redirects]]
+  from = "/thanks.html"
+  to = "/thanks/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
